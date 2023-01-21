@@ -19,6 +19,17 @@
   "background": {
     "service_worker": "background.js"
   },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://leetcode.com/submissions/detail/*"
+      ],
+      "js": [
+        "hideSubmissionDetail.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
   "host_permissions": [
     "https://*/*"
   ]

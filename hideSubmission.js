@@ -1,5 +1,6 @@
-let observer = new MutationObserver(() => {
+let submissionObserver = new MutationObserver(() => {
   const submissionContainer = document.querySelector('[class^="result-container"]')
+
   const testCases = submissionContainer.querySelectorAll('[class*="RowContainer"]')
   const detailLink = submissionContainer.querySelector('[class^="detail-link"]')
 
@@ -7,4 +8,4 @@ let observer = new MutationObserver(() => {
   detailLink.remove()
 });
 
-observer.observe(document, {childList: true, subtree: true});
+submissionObserver.observe(document, {childList: true, subtree: true});
