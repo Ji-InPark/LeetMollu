@@ -1,0 +1,25 @@
+{
+  "name": "leetension",
+  "version": "0.1",
+  "description": "An extension to hide test case and related topics until correct the problem",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/assets/icons/16.png",
+      "48": "/assets/icons/48.png",
+      "128": "/assets/icons/128.png"
+    }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": {
+    "matches": [
+      "https://leetcode.com/problems/*/submissions/"
+    ],
+    "js": [
+      "hide.js"
+    ]
+  }
+}
