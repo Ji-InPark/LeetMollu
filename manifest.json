@@ -1,7 +1,7 @@
 {
-  "name": "leetension",
-  "version": "0.1",
-  "description": "An extension to hide test case and related topics until correct the problem",
+  "name": "LeetMollu",
+  "version": "1.0.0",
+  "description": "An extension to hide test case",
   "manifest_version": 3,
   "action": {
     "default_popup": "popup.html",
@@ -12,8 +12,6 @@
     }
   },
   "permissions": [
-    "storage",
-    "tabs",
     "scripting"
   ],
   "background": {
@@ -31,6 +29,6 @@
     }
   ],
   "host_permissions": [
-    "https://*/*"
+    "https://leetcode.com/problems/*"
   ]
 }
