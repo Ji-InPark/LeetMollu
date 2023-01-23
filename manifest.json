@@ -1,14 +1,15 @@
 {
   "name": "LeetMollu",
-  "version": "1.0.0",
-  "description": "An extension to hide test case",
+  "version": "1.0.1",
+  "description": "An extension to hide leetcode test case",
   "manifest_version": 3,
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "/assets/icons/16.png",
-      "48": "/assets/icons/48.png",
-      "128": "/assets/icons/128.png"
+      "16": "/assets/icons/JinFox.png",
+      "32": "/assets/icons/JinFox.png",
+      "48": "/assets/icons/JinFox.png",
+      "128": "/assets/icons/JinFox.png"
     }
   },
   "permissions": [
